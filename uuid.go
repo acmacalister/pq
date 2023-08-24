@@ -1,7 +1,6 @@
 package pq
 
 import (
-	"encoding/hex"
 	"fmt"
 )
 
@@ -11,5 +10,5 @@ func decodeUUIDBinary(src []byte) ([]byte, error) {
 		return nil, fmt.Errorf("pq: unable to decode uuid; bad length: %d", len(src))
 	}
 	
-	return dst, nil
+	return src, nil
 }
